@@ -131,3 +131,41 @@ aside .contact i {
     font-size: 1.7rem;
 }
 
+@media screen and (max-width: 1200px) {
+    main {
+        width: 70vw;
+    }
+
+    aside {
+        width: 30vw;    
+    }
+}
+
+@media screen and (max-width: 1068px){
+    body {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    main,
+    aside {
+        width: 100%;
+    }
+
+    main {
+        padding: 2rem;
+    }
+
+    main .active {
+        padding: 1rem;
+    }
+
+    main p {
+        padding: 0 0 1rem 0;
+    }
+
+    aside h2 {
+        padding: 1rem 0;
+    }
+}
+
