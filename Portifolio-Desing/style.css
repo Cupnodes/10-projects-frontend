@@ -11,7 +11,7 @@
      background-size: cover;
      background-position: center center;
      display: flex;
-     margin: 0 2rem;
+     margin: 0 0 0 2rem;
  }
 
 main {
@@ -61,4 +61,73 @@ aside {
     justify-content: space-around;
     width: 40vw;
     min-height: 100vh;
+    background-color: rgba(0, 0, 0, .5);
 }
+
+aside h2 {
+    font-size: 2rem;
+    color: #fff;
+    font-weight: 300;
+    position: relative;
+}
+
+aside h2::before{
+    content: '';
+    display: block;
+    background-color: #fff;
+    height: 1px;
+    width: 2rem;
+    position: absolute;
+    top: 50%;
+    left: -70%;
+}
+
+aside h2::after{
+    content: '';
+    display: block;
+    background-color: #fff;
+    height: 1px;
+    width: 2rem;
+    position: absolute;
+    top: 50%;
+    right: -70%;
+}
+
+aside ul {
+    list-style: none;
+    color: #fff;
+}
+
+aside ul li {
+    padding: .2rem 0;
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+aside ul li::before {
+    width: 1em;
+    display: inline-block;
+    content: "\2022";
+    color: #fff;
+}
+
+aside .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 1.5rem;
+    
+    height: 100px;   
+}
+
+aside .contact a {
+    color: #fff;
+    text-decoration: none;
+}
+
+aside .contact i {
+    padding: 0 1rem;
+    font-size: 1.7rem;
+}
+
